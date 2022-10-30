@@ -129,13 +129,7 @@ const turnoComputadora = (ptsMinimos) => {
 
  btnNuevo.addEventListener ('click', ()=> {
     let nombre = prompt('Bienvenido, Ingresa tu nombre');
-    
-    if (localStorage.item(nombre)!=null){
-        alert ('Hola bienvenido, vienes por mas ' + nombre + ' comienza el juego pidiendo una nueva carta  ¡¡ Muchos exitos :)!!');
-    }else{
-        localStorage.setItem(nombre, nombre);
-    }
-
+    alert ('Hola ' + nombre + ' para empezar a jugar tienes que pedir una carta ¡¡ Muchos exitos :)!!');
     console.clear();
 
     baraja= [];
