@@ -28,3 +28,8 @@ html,body{
 #computadora-cartas, #jugador-cartas{
     height: 250px;
 }
+
+.tabla{
+    margin: 20px;
+    padding: 20px;
+}
