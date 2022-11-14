@@ -1,11 +1,11 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
-html,body{
-    background: rgb(16, 14, 14);
+ html, body {
+    background-color: rgb(16, 14, 14);
     color: rgba(255, 255, 255, 0.415);
     background: linear-gradient(#000, #1d9b82);
 }
@@ -17,7 +17,6 @@ html,body{
     margin-top: 10px;
     padding: 20px;
 }
-
 .carta {
     position: relative;
     width: 150px;
@@ -32,4 +31,29 @@ html,body{
 .tabla{
     margin: 20px;
     padding: 20px;
+}   
+
+/* main Home */
+.imgCentral h1,h2{
+    text-align: center;
+    font-family:Verdana, Tahoma, sans-serif ;
+    margin: 10px;
 }
+.imgCentral img{
+  width: 700px;
+  height: 500px;
+  margin-bottom: 30px;
+  border-radius: 25%;
+  margin-left: 25%;
+  
+}
+
+.pokemon-container img{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+

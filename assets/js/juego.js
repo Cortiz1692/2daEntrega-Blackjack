@@ -30,6 +30,8 @@ const crearBaraja = () => {
         }
     }
     console.log(baraja);
+    baraja = _.shuffle (baraja);
+
     return baraja;
 }
 crearBaraja();
@@ -40,10 +42,9 @@ const pedirCarta = () => {
     if (baraja.length === 0) {
         alert('ya no hay cartas');
     }
-    const cartas = baraja[Math.floor(Math.random() * baraja.length)];
-    const carta = baraja.pop();
+        const carta = baraja.pop();
     
-    return cartas;
+    return carta;
 }
 
 //pedirCarta();
@@ -65,7 +66,7 @@ const turnoComputadora = (ptsMinimos) => {
   
   
     const imgCarta = document.createElement('img');
-    imgCarta.src = `assets/cartas/${ carta }.png`;
+    imgCarta.src = `../cartas/${ carta }.png`;
     imgCarta.classList.add('carta');
     CartasComputadora.append(imgCarta);
 
@@ -84,7 +85,7 @@ const turnoComputadora = (ptsMinimos) => {
     }else{
         alert('Perdiste :(')
     }
-}, 100 );
+}, 1000 );
  
 
 }
@@ -100,7 +101,7 @@ const turnoComputadora = (ptsMinimos) => {
 
 
   const imgCarta = document.createElement('img');
-  imgCarta.src = `assets/cartas/${ carta }.png`;
+  imgCarta.src = `../cartas/${ carta }.png`;
   imgCarta.classList.add('carta');
   CartasJugador.append(imgCarta);
 
